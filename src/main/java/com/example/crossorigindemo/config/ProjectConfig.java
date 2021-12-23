@@ -13,6 +13,8 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
+        //all method and domain declaration instead @CrossOrigin
         http.cors(
                 c->{
                     CorsConfigurationSource source = request -> {
